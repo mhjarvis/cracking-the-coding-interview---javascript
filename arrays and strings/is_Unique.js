@@ -1,15 +1,15 @@
-/* 
- * Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
- */
+/* Array to hold 26 values coresponding to the alphabet*/
+let arr = [];
 
-let arr = [];               //array to hold 26 values coresponding to the alphabet
+/* Get user input */
+let str = prompt("Please enter a string to test: ");
 
-testString("hello");
+testString(str);
 
 /* Function to test uniqueness by using array */
 function isUnique(str) {
 
-    str.toLowerCase;                                //set string to lowercsref
+    str.toLowerCase;                                //set string to lowercase
 
     /* Populate array with 0 values */
     for(let i = 0; i < 26; i++) {
@@ -21,9 +21,9 @@ function isUnique(str) {
 
         let index = str.charCodeAt(i) - 97;         //ascii conversion for index use
         
-        if(arr[index] === 1) {                       //if value has already been updated in array
+        if(arr[index] === 1) {                      //if value has already been updated in array
             return false;
-        } else if(arr[index] === 0) {                //update value in array
+        } else if(arr[index] === 0) {               //update value in array
             arr[index] = 1;
         }
     }   return true;
