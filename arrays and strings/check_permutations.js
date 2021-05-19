@@ -12,7 +12,7 @@ let str2 = "thedogisanodfoiwjfeowifjwofijwifjwoeifjwoifjwofjroifjwofjofjrojofwfj
 
 /* Test speed performance for each function run */
 let t2 = performance.now();
-console.log(betterTestForPermutation(str1, str2));
+console.log(betterTestForPermutation(str1, str2));      // time to complete in ms
 let t3 = performance.now();
 
 let t0 = performance.now();
