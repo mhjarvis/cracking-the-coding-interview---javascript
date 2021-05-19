@@ -18,12 +18,13 @@ function URLify(str) {
 
     str = str.trim().split("");
     
-    for(let i = 0; i < length; i++) {
+    for(let i = 0; i < str.length; i++) {
         if(str[i] == ' ') {
             str[i] = '%20';
         }
     }
-    return str = str.join("");
+    str = str.join("");
+    return str;
 }
 
 /* Simpler version of urlify function */
