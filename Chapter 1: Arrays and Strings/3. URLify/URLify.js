@@ -3,15 +3,15 @@
  */
 
 let t0 = performance.now();
-console.log(URLify("Mr John Smith   "));
+console.log("URLify Function: \n\t" + URLify("Mr John Smith   "));
 let t1 = performance.now();
 
 let t2 = performance.now();
-console.log(simpleURLify("Mr John Smith   "));
+console.log("simpleURLify Function: \n\t" + simpleURLify("Mr John Smith   "));
 let t3 = performance.now();
 
-console.log("URLify function: " + (t1 - t0));
-console.log("simpleURLIFY function: " + (t3 - t2))
+console.log("\nURLify function: " + (t1 - t0));
+console.log("\nsimpleURLIFY function: " + (t3 - t2))
 
 /* Function to URLify string using basic for loop */
 function URLify(str) {
